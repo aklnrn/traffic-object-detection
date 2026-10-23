@@ -1,0 +1,11 @@
+bicycle
+car
+motorcycle
+bus
+truck
+lorry
+trailer
+police
+ambulance
+fire_truck
+pedestrian

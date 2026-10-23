@@ -1,0 +1,50 @@
+# Python: кеш и скомпилированные файлы
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Системные файлы macOS
+.DS_Store
+
+# Предобученные и обученные веса моделей
+yolov8n.pt
+*.pt
+
+# Результаты запусков экспериментов
+# Сохранен только файл-заполнитель, остальное не включать в Git
+runs/*
+!runs/.gitkeep
+
+# Переменные окружения и секреты
+.env
+.env.*
+!.env.example
+
+# Настройки редакторов кода
+.vscode/
+.idea/
+
+# Кэши разметки Ultralytics
+*.cache
+
+# Логи TensorBoard
+events.out.tfevents*
+
+# Подготовленные выборки — создаются скриптом prepare_dataset.py
+data/processed/
+data/processed_rebuilt/
+
+# Сгенерированные визуализации — сохраняются локально
+reports/samples/visualizations/
+reports/samples/visualizations_rebuilt/
+
+# Временные отчеты и манифесты повторной проверки
+reports/dataset_report_rebuilt.md
+reports/manifest_rebuilt.sha256
