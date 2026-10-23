@@ -1,0 +1,28 @@
+# Воспроизводимый эксперимент по обнаружению объектов с помощью YOLOv8.
+# Пути указаны относительно корня проекта.
+
+model: yolov8n.pt
+data: data/processed/dataset.yaml
+
+epochs: 30
+patience: 10
+imgsz: 320
+batch: 2
+
+device: cpu
+workers: 0
+seed: 42
+deterministic: true
+
+pretrained: true
+optimizer: auto
+amp: false
+
+val: true
+plots: true
+save: true
+save_period: -1
+
+project: runs
+name: traffic_yolov8n
+exist_ok: false

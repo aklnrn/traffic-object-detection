@@ -1,0 +1,90 @@
+{
+  "run_name": "traffic_yolov8n_20261022T160059529151Z",
+  "status": "completed",
+  "started_at_utc": "2026-10-22T16:00:59.530408+00:00",
+  "finished_at_utc": "2026-10-22T16:02:33.218700+00:00",
+  "dry_run": false,
+  "training_started": true,
+  "project_revision": null,
+  "source_files_sha256": {
+    "src/run_experiment.py": "c6116cf5e3b00e3ee60b345a3d766c1a2ca1458fdaceb45e8f13ca1fa7224c36",
+    "src/utils.py": "8a196b8acbb60e12baf9f5a919e204f550a7eef86cb4087d6785175fbcea86f3",
+    "src/tensorboard_logger.py": "b0b0ef75243073c778094b78ac618c685545ce7353dbdb05327fe62737be0361"
+  },
+  "config_sha256": "e64ff58ddcd8bd512d4f67fbeda5cc86ca63220728eb9ef5f7f6a4d8475d8eea",
+  "dataset": {
+    "yaml": "data/processed/dataset.yaml",
+    "sha256": "ba437c5c5a25183ff7ec93fc4ab48c07c950ce2f76e133f1cc1bf3754452a8d8",
+    "file_count": 81,
+    "class_count": 11,
+    "images_per_split": {
+      "train": 28,
+      "val": 6,
+      "test": 6
+    }
+  },
+  "environment": {
+    "python_version": "3.11.9",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "ultralytics_version": "8.3.0",
+    "torch_version": "2.6.0",
+    "tensorboard_version": "2.19.0",
+    "pyyaml_version": "6.0.3"
+  },
+  "parameters": {
+    "model": "yolov8n.pt",
+    "data": "data/processed/dataset.yaml",
+    "epochs": 3,
+    "patience": 10,
+    "imgsz": 320,
+    "batch": 2,
+    "device": "cpu",
+    "workers": 0,
+    "seed": 42,
+    "deterministic": true,
+    "pretrained": true,
+    "optimizer": "auto",
+    "amp": false,
+    "val": true,
+    "plots": true,
+    "save": true,
+    "save_period": -1,
+    "project": "runs",
+    "name": "traffic_yolov8n",
+    "exist_ok": false
+  },
+  "training_arguments": {
+    "data": "/Users/arinakilcanova/Downloads/sts-cv-test/runs/traffic_yolov8n_20261022T160059529151Z/ultralytics_dataset.yaml",
+    "epochs": 3,
+    "patience": 10,
+    "imgsz": 320,
+    "batch": 2,
+    "device": "cpu",
+    "workers": 0,
+    "seed": 42,
+    "deterministic": true,
+    "pretrained": true,
+    "optimizer": "auto",
+    "amp": false,
+    "val": true,
+    "plots": true,
+    "save": true,
+    "save_period": -1,
+    "project": "/Users/arinakilcanova/Downloads/sts-cv-test/runs/traffic_yolov8n_20261022T160059529151Z",
+    "name": "ultralytics",
+    "exist_ok": true,
+    "verbose": true
+  },
+  "results_csv": "runs/traffic_yolov8n_20261022T160059529151Z/ultralytics/results.csv",
+  "final_metrics": {},
+  "tensorboard_images": [
+    "runs/traffic_yolov8n_20261022T160059529151Z/ultralytics/confusion_matrix.png",
+    "runs/traffic_yolov8n_20261022T160059529151Z/ultralytics/confusion_matrix_normalized.png",
+    "runs/traffic_yolov8n_20261022T160059529151Z/ultralytics/val_batch0_pred.jpg",
+    "runs/traffic_yolov8n_20261022T160059529151Z/ultralytics/val_batch1_pred.jpg"
+  ],
+  "checkpoints": [
+    "runs/traffic_yolov8n_20261022T160059529151Z/ultralytics/weights/best.pt",
+    "runs/traffic_yolov8n_20261022T160059529151Z/ultralytics/weights/last.pt"
+  ]
+}

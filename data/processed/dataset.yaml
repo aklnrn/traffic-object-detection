@@ -1,0 +1,17 @@
+path: .
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: bicycle
+  1: car
+  2: motorcycle
+  3: bus
+  4: truck
+  5: lorry
+  6: trailer
+  7: police
+  8: ambulance
+  9: fire_truck
+  10: pedestrian

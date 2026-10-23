@@ -1,0 +1,57 @@
+{
+  "run_name": "traffic_yolov8n_20261022T154930166566Z",
+  "status": "dry_run_passed",
+  "started_at_utc": "2026-10-22T15:49:30.167511+00:00",
+  "finished_at_utc": "2026-10-22T15:49:30.317017+00:00",
+  "dry_run": true,
+  "training_started": false,
+  "project_revision": null,
+  "source_files_sha256": {
+    "src/run_experiment.py": "6d84a3e06b66af333d8e40d2d9eca9ba62e0d4581c7bff278e7458fd4295bb6e",
+    "src/utils.py": "8a196b8acbb60e12baf9f5a919e204f550a7eef86cb4087d6785175fbcea86f3",
+    "src/tensorboard_logger.py": "b0b0ef75243073c778094b78ac618c685545ce7353dbdb05327fe62737be0361"
+  },
+  "config_sha256": "e64ff58ddcd8bd512d4f67fbeda5cc86ca63220728eb9ef5f7f6a4d8475d8eea",
+  "dataset": {
+    "yaml": "data/processed/dataset.yaml",
+    "sha256": "ba437c5c5a25183ff7ec93fc4ab48c07c950ce2f76e133f1cc1bf3754452a8d8",
+    "file_count": 81,
+    "class_count": 11,
+    "images_per_split": {
+      "train": 28,
+      "val": 6,
+      "test": 6
+    }
+  },
+  "environment": {
+    "python_version": "3.11.9",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "ultralytics_version": "8.3.0",
+    "torch_version": "2.6.0",
+    "tensorboard_version": "2.19.0",
+    "pyyaml_version": "6.0.3"
+  },
+  "parameters": {
+    "model": "yolov8n.pt",
+    "data": "data/processed/dataset.yaml",
+    "epochs": 30,
+    "patience": 10,
+    "imgsz": 320,
+    "batch": 2,
+    "device": "cpu",
+    "workers": 0,
+    "seed": 42,
+    "deterministic": true,
+    "pretrained": true,
+    "optimizer": "auto",
+    "amp": false,
+    "val": true,
+    "plots": true,
+    "save": true,
+    "save_period": -1,
+    "project": "runs",
+    "name": "traffic_yolov8n",
+    "exist_ok": false
+  },
+  "model_loaded": true
+}
